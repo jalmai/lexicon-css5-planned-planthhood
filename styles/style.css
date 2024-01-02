@@ -1,3 +1,7 @@
+:root {
+  --brown-color: cornflowerblue;
+  --green-color: cadetblue;
+}
 body {
   background-color: blanchedalmond;
   margin: 0;
@@ -10,6 +14,7 @@ body {
   margin: 0 auto;
   padding: 0px;
 }
+/* HEADER */
 .header-grid-wrapper {
   height: 45vh;
   display: grid;
@@ -27,27 +32,49 @@ body {
   background-image: url("https://picsum.photos/id/18/800/800/?blur");
 }
 .grid21 {
-  background-color: cadetblue;
+  background-color: var(--green-color);
   grid-area: 2 / 1 / 2 / 3;
 }
 .grid22 {
-  background-color: cornflowerblue;
+  background-color: var(--brown-color);
   grid-area: 2 / 2 / 3 / 3;
 }
+
+/* NAV */
 nav ul {
   display: none;
+}
+/* MAIN */
+main {
+  padding: 20px;
 }
 .cta {
   min-height: 200px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .cta img {
   border-radius: 100%;
-  padding: 10%;
+  background-color: var(--green-color);
+  width: 80%;
+  margin: 3rem 0px;
+}
+.cta button {
+  background-color: var(--green-color);
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: 0px;
+}
+.cta:last-of-type button {
+  order: 99;
 }
 h1 {
   text-transform: uppercase;
+  color: var(--green-color);
+  font-size: 1.5em;
 }
 @media screen and (min-width: 600px) {
   .header-grid-wrapper {
