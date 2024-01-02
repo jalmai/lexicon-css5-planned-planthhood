@@ -76,6 +76,52 @@ h1 {
   color: var(--green-color);
   font-size: 1.5em;
 }
+/* CARDS PLANTERADE PLANTERINGAR */
+.card-wrapper {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card-wrapper figure {
+  width: 50%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.show-more {
+  background-color: var(--green-color);
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: 0px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.planned-plants {
+  text-align: center;
+}
+/* FOOTER  */
+.footer-wrapper {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1586281010691-f9da4be5b1f7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.footer-child {
+  flex: 1;
+  flex-grow: 1;
+}
+.transp-bg {
+  background-color: rgb(0, 0, 0, 0.8);
+  color: white;
+}
 @media screen and (min-width: 600px) {
   .header-grid-wrapper {
     height: 30vh;
@@ -120,5 +166,9 @@ h1 {
   }
   nav ul li a {
     text-decoration: none;
+  }
+  .card-wrapper figure {
+    width: 30%;
+    overflow: hidden;
   }
 }
