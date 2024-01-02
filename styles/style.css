@@ -6,7 +6,7 @@ body {
 .wrapper {
   max-width: 500px;
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0px;
 }
@@ -24,6 +24,7 @@ body {
 }
 .grid1 {
   grid-area: 1 / 1 / 2 / 3;
+  background-image: url("https://picsum.photos/id/18/800/800/?blur");
 }
 .grid21 {
   background-color: cadetblue;
@@ -33,7 +34,21 @@ body {
   background-color: cornflowerblue;
   grid-area: 2 / 2 / 3 / 3;
 }
-
+nav ul {
+  display: none;
+}
+.cta {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.cta img {
+  border-radius: 100%;
+  padding: 10%;
+}
+h1 {
+  text-transform: uppercase;
+}
 @media screen and (min-width: 600px) {
   .header-grid-wrapper {
     height: 30vh;
@@ -53,5 +68,30 @@ body {
   .grid22 {
     background-color: cornflowerblue;
     grid-area: 2 / 2 / 3 / 3;
+  }
+
+  nav ul {
+    border: 1px solid gray;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    text-align: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    flex-grow: 1;
+  }
+  nav ul li:hover {
+    background-color: lightgray;
+    color: black;
+  }
+  nav ul li a {
+    text-decoration: none;
   }
 }
