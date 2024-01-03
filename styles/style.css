@@ -143,10 +143,9 @@ footer {
 }
 @media screen and (min-width: 600px) {
   .header-grid-wrapper {
-    height: 30vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
